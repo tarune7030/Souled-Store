@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping for Men & Women</title>
+    <style>
+      #container22 {
+        background-color: rgb(225, 27, 35);
+        width: 100%;
+        height: 47px;
+        display: flex;
+        margin: auto;
+      }
+      #option > .but1 {
+        background-color: rgb(237, 45, 47);
+        color: white;
+        border-bottom: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 112px;
+      }
+      #option {
+        display: flex;
+        margin-left: 100px;
+      }
+      #nav-button:hover {
+        cursor: pointer;
+        background-color: rgb(241, 102, 104);
+      }
+      #nav-button {
+        background-color: rgb(237, 45, 47);
+        color: white;
+        border: 1px solid black;
+        font-size: 14px;
+        letter-spacing: normal;
+        padding: 20px 12px 25px 12px;
+        text-align: center;
+        height: 100%;
+        width: 110px;
+      }
+      #logo:hover {
+        cursor: pointer;
+      }
+      #logo {
+        height: 100%;
+        width: 100px;
+        margin-left: 60px;
+      }
+      #option2 > p:hover {
+        cursor: pointer;
+      }
+      #option2 {
+        display: flex;
+        gap: 30px;
+        margin-left: 400px;
+        color: white;
+        align-items: center;
+        font-size: 13px;
+      }
+      #main > form {
+        border: 1px solid rgb(201, 201, 201);
+        width: 150px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        padding-left: 5px;
+      }
+
+      #main > p:hover {
+        cursor: pointer;
+      }
+
+      #main {
+        border: 0px solid red;
+        margin-top: -10px;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-left: -160px;
+      }
+
+      #content {
+        width: 54%;
+        height: auto;
+        /* border: 2px solid red; */
+        padding-left: 30px;
+      }
+
+      #content > div > li {
+        color: rgb(106, 105, 105);
+      }
+
+      #flex {
+        height: 491px;
+        border: 3px solid grey;
+        width: 80%;
+        border-radius: 20px;
+      }
+      #flex > h2 {
+        margin-left: 20px;
+      }
+      #flex > div {
+        margin-left: 20px;
+      }
+      #sec_main {
+        display: flex;
+      }
+      #sec_main > div:nth-child(1) {
+        margin-right: 20px;
+        /* border: 1px solid red; */
+      }
+      #sec_main > div:nth-child(2) {
+        margin-right: 20px;
+        /* border: 1px solid red; */
+        margin-top: -20px;
+      }
+      #rem {
+        background-color: rgb(41, 142, 131);
+        border: 0;
+        color: white;
+      }
+      #rem:hover {
+        cursor: pointer;
+      }
+      #coupons {
+        display: block;
+        font-size: 20px;
+      }
+      #apply {
+        margin-left: 10px;
+        background-color: white;
+        color: rgb(41, 142, 131);
+        /* border: 1px solid rgb(251, 140, 166); */
+        height: 30px;
+      }
+      #input_coupon {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 30px;
+      }
+      #apply:hover {
+        background-color: white;
+        color: rgb(41, 142, 131);
+      }
+      #price {
+        display: flex;
+      }
+      #price > div {
+        height: auto;
+        width: 80%;
+        /* border: 2px solid red; */
+      }
+      #price > div:nth-child(1) {
+        width: 300px;
+      }
+
+      #total_amount {
+        display: flex;
+        /* border: 2px solid red; */
+        justify-content: space-between;
+        width: 250px;
+      }
+      #placeOrder {
+        width: 80%;
+        height: 50px;
+        background-color: rgb(41, 142, 131);
+        color: white;
+        border: 0;
+        margin-bottom: 20px;
+      }
+      #placeOrder:hover,
+      #apply:hover,
+      #hide:hover {
+        cursor: pointer;
+      }
+      #hide {
+        visibility: hidden;
+        width: 80%;
+        height: 50px;
+        background-color: rgb(41, 142, 131);
+        color: white;
+        border: 0;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+      }
+      #name > input {
+        width: 80%;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: 2px solid grey;
+      }
+      #house > input {
+        width: 80%;
+        height: 40px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 2px solid grey;
+      }
+      #street > input {
+        width: 80%;
+        height: 70px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 2px solid grey;
+      }
+      #num > input {
+        width: 30%;
+        height: 40px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 2px solid grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div id="container22">
+      <img
+        id="logo"
+        src="https://www.thesouledstore.com/static/img/newlogosticky.f7f01f0.png"
+        alt=""
+      />
+      <div id="option">
+        <a href="womensPage.html"><button id="nav-button">WOMEN</button></a>
+        <a href="mensPage.html"><button id="nav-button">MEN</button></a>
+        <button class="but1">KIDS</button>
+
+        <div id="option2">
+          <p>TRACK ORDER</p>
+          <p>CONTACT US</p>
+          <p>DOWNLOAD APP</p>
+        </div>
+      </div>
+    </div>
+    <!-- Main -->
+    <div style="display: flex; justify-content: space-around; margin-top: 20px">
+      <div id="content">
+        <div id="flex">
+          <h2>ADDRESS</h2>
+          <div id="name">
+            <input type="text" placeholder="YOUR FULL NAME" />
+          </div>
+
+          <div id="house">
+            <input type="text" placeholder="HOUSE NO." />
+          </div>
+          <div id="street">
+            <input type="text" placeholder="STREET ADDRESS" />
+          </div>
+          <div id="num">
+            <input type="number" placeholder="PINCODE" />
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <h2>Coupons</h2>
+        <div id="coupons">
+          <li>Apply Coupon</li>
+          <input
+            id="input_coupon"
+            type="text"
+            placeholder="Enter Coupon Code"
+          />
+          <button onclick="app()" id="apply">Apply</button>
+        </div>
+        <hr />
+        <h2>Price Details</h2>
+        <div id="price">
+          <div>
+            <p>Total MRP</p>
+            <p>coupon-discount</p>
+            <p>convenience fee</p>
+          </div>
+          <div id="price2"></div>
+        </div>
+        <hr />
+        <div id="total_amount">
+          <h2>Total Amount</h2>
+          <h3 id="tp"></h3>
+        </div>
+        <button id="placeOrder"><h3>Place Order</h3></button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let x = JSON.parse(localStorage.getItem("cartProducts"));
+  let total = x.reduce((acc, el) => {
+    let y = el.offer.split(" ");
+    return acc + Number(y[1]);
+    console.log(y[1]);
+  }, 0);
+  display(x);
+  price5(total);
+
+  function display(data) {
+    total = x.reduce((acc, el) => {
+      let y = el.offer.split(" ");
+      return acc + Number(y[1]);
+      console.log(y[1]);
+    }, 0);
+
+    document.querySelector("#tp").innerText = "";
+    total = x.reduce((acc, el) => {
+      let y = el.offer.split(" ");
+      return acc + Number(y[1]);
+      console.log(y[1]);
+    }, 0);
+    document.querySelector("#tp").innerText = total + "rs";
+
+    "Items available in your bag: " + x.length;
+  }
+  function del(elem, i) {
+    x.splice(i, 1);
+    localStorage.setItem("cartProducts", JSON.stringify(x));
+    display(x);
+  }
+
+  function price5(total) {
+    let p = document.createElement("p");
+    p.innerText = total + "rs";
+    p.setAttribute("id", "pr");
+    let cp = document.createElement("p");
+    cp.innerText = "------";
+    cp.setAttribute("id", "cp");
+
+    let cf = document.createElement("p");
+    cf.innerText = "Free";
+    cf.style.color = "green";
+    document.querySelector("#price2").append(p, cp, cf);
+    document.querySelector("#tp").innerText = total + "rs";
+  }
+
+  function app() {
+    let inp = document.querySelector("#input_coupon").value;
+    let total = x.reduce((acc, el) => acc + Number(el.discounted_price), 0);
+    if (inp == "fashion30") {
+      total = total - 300;
+      document.querySelector("#cp").innerText = "-300" + "rs";
+      document.querySelector("#tp").innerText = total + "rs";
+      console.log(total);
+    } else if (inp == "fashion20") {
+      total = total - 200;
+      document.querySelector("#cp").innerText = "-200" + "rs";
+      document.querySelector("#tp").innerText = total + "rs";
+      console.log(total);
+    } else if (inp == "fashion10") {
+      total = total - 100;
+      document.querySelector("#cp").innerText = "-100" + "rs";
+      document.querySelector("#tp").innerText = total + "rs";
+      console.log(total);
+    } else {
+      document.querySelector("#pr").innerText = total + "rs";
+      document.querySelector("#tp").innerText = total + "rs";
+    }
+  }
+
+  document.querySelector("#placeOrder").addEventListener("click", my_place);
+
+  function my_place(event) {
+    event.preventDefault();
+    alert("Order has been placed successfully");
+    // let x = localStorage.getItem("Signup");
+    // console.log(x);
+
+    // if (x == undefined) {
+    //   event.preventDefault();
+    //   alert("Signup to place order");
+    //   document.querySelector("#hide").style.visibility = "visible";
+    // }
+  }
+</script>

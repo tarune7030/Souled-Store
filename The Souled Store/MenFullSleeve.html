@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping for Men & Women</title>
+    <style>
+      #cont11 {
+        background-color: rgb(225, 27, 35);
+        width: 100%;
+        height: 47px;
+        display: flex;
+        margin: auto;
+      }
+      #option > .but11 {
+        background-color: white;
+        color: black;
+        border-bottom: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      #option {
+        display: flex;
+        margin-left: 100px;
+      }
+      #option > button:hover {
+        cursor: pointer;
+        background-color: rgb(241, 102, 104);
+      }
+      #option > button {
+        background-color: rgb(237, 45, 47);
+        color: white;
+        border: 1px solid black;
+        font-size: 14px;
+        letter-spacing: normal;
+        padding: 20px 12px 25px 12px;
+        text-align: center;
+        height: 100%;
+        width: 110px;
+      }
+      #logo:hover {
+        cursor: pointer;
+      }
+      #logo {
+        height: 100%;
+        width: 100px;
+        margin-left: 60px;
+      }
+      #option2 > p:hover {
+        cursor: pointer;
+      }
+      #option2 {
+        display: flex;
+        gap: 30px;
+        margin-left: 400px;
+        color: white;
+        align-items: center;
+        font-size: 13px;
+      }
+      #cont22 {
+        display: flex;
+        width: 100%;
+        height: 61px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: auto;
+        position: sticky;
+        top: 0;
+      }
+      #cont33 {
+        height: 42px;
+        width: 99%;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-evenly;
+        margin: auto;
+      }
+      .dropdown {
+        position: static;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        margin-top: -15px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      #cont44 {
+        height: auto;
+        width: 100%;
+        margin-top: 1px;
+        display: flex;
+      }
+
+      #image1 {
+        margin: auto;
+      }
+      #cont55 {
+        width: 100%;
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #cont66 {
+        width: 100%;
+        height: auto;
+        display: flex;
+      }
+      #cont77 {
+        border: 1px solid rgb(183, 181, 181);
+        border-left: none;
+        border-bottom: none;
+        height: 450px;
+        width: 20%;
+      }
+      #cont88 {
+        border: 1px solid rgb(183, 181, 181);
+        height: auto;
+        width: 76%;
+        margin-left: 20px;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+      }
+      #cont88 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+      #cont88 > div {
+        text-align: left;
+      }
+      #cont88 > div > p {
+        margin-top: -10px;
+        font-size: 14px;
+      }
+      #cont88 > div > img:hover {
+        cursor: pointer;
+      }
+
+      #cont88 > div > img {
+        width: 100%;
+      }
+
+      #select1 {
+        width: 90%;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(55, 55, 56);
+      }
+      #contt88 {
+        width: 90%;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      #clear:hover {
+        background-color: rgb(17, 122, 122);
+        color: white;
+      }
+      #apply:hover {
+        background-color: rgb(17, 122, 122);
+        color: white;
+      }
+
+      #clear {
+        width: 95px;
+        height: 15px;
+        color: rgb(17, 122, 122);
+        background-color: white;
+        border: 2px solid rgb(17, 122, 122);
+        border-radius: 5px;
+      }
+      #apply {
+        width: 95px;
+        height: 15px;
+        color: rgb(17, 122, 122);
+        background-color: white;
+        border: 2px solid rgb(17, 122, 122);
+        margin-left: 70px;
+        border-radius: 5px;
+      }
+      input {
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 12px;
+        box-sizing: border-box;
+        color: black;
+        transition: 0.5s;
+        margin-top: 10px;
+        background-image: url("https://prod-img.thesouledstore.com/public/theSoul/images/appIcons/ic_search@2x.png?format=webp&w=100&dpr=1.3");
+        background-size: 30px;
+      }
+      input:hover {
+        width: 200px;
+        background: white;
+        border-radius: 10px;
+      }
+
+      /* lower page */
+      #container44 {
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+      }
+      #container4 {
+        background-color: rgb(237, 45, 47);
+        width: 100%;
+        height: 61px;
+        display: flex;
+        margin-top: -100px;
+      }
+      #container5 {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: center;
+      }
+      #para {
+        font-size: 45px;
+        margin-top: 15px;
+      }
+      #container6 > .bag1 > div > h5:hover {
+        cursor: pointer;
+        color: rgb(237, 46, 48);
+      }
+      #container6 {
+        height: 670px;
+        width: 100%;
+        background-color: rgb(230, 231, 232);
+      }
+      .bag1 {
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .bag1 > div {
+        margin-top: 20px;
+      }
+      .bag1 > div > h3 {
+        color: rgb(237, 46, 48);
+      }
+      h5 {
+        color: rgb(90, 89, 91);
+      }
+      .bag1 > div {
+        width: 24%;
+        justify-content: space-evenly;
+        color: gray;
+        text-align: left;
+      }
+      #cont1 {
+        width: 30%;
+        margin: auto;
+        height: auto;
+        margin-top: -260px;
+      }
+      #cont1 > h6 {
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(90, 89, 91);
+      }
+      #cont1 > img {
+        width: 30%;
+        height: 40px;
+        margin-top: -60px;
+      }
+      #cont2 > div > img:hover {
+        cursor: pointer;
+      }
+      #cont2 {
+        height: 50px;
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+      }
+      #cont2 > div {
+        height: 100%;
+        width: 20%;
+        margin-left: 80%;
+        display: flex;
+      }
+      #cont2 > div > img {
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      #cont3 > div > div > h5:hover {
+        cursor: pointer;
+      }
+      #cont3 {
+        height: 100px;
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+      }
+      #cont3 > div {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+      }
+      #cont3 > div > div {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        border: 1px solid rgb(172, 170, 170);
+      }
+      #cont3 > div > div > h5 {
+        text-align: left;
+        margin-left: 10px;
+        color: rgb(237, 46, 48);
+      }
+      #cont4 {
+        width: 74%;
+        height: 90px;
+        margin: auto;
+        display: flex;
+        margin-top: 5px;
+      }
+      #cont4 > div {
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        font-size: 12px;
+      }
+      #cont4 > div > p {
+        margin-top: 42px;
+        margin-left: 7px;
+        color: rgb(84, 84, 84);
+      }
+      #image4 {
+        justify-content: space-evenly;
+        margin-left: -20px;
+      }
+      #image4 > p:nth-child(1) {
+        color: gray;
+        margin-top: 34px;
+        margin-left: -40px;
+        font-size: 25px;
+      }
+      #image4 > p:nth-child(2) {
+        margin-left: -20px;
+        color: rgb(84, 84, 84);
+      }
+      #image4 > img {
+        width: 35px;
+        height: 35px;
+        margin-top: 30px;
+      }
+      #last {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cont11">
+      <img
+        id="logo"
+        src="https://www.thesouledstore.com/static/img/newlogosticky.f7f01f0.png"
+        alt=""
+      />
+      <div id="option">
+        <a href="womensPage.html"
+          ><button
+            style="
+              background-color: rgb(237, 45, 47);
+              height: 100%;
+              width: 110px;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            WOMEN
+          </button></a
+        >
+        <button class="but11">MEN</button>
+        <a href="kidsPage.html"
+          ><button
+            style="
+              background-color: rgb(237, 45, 47);
+              height: 100%;
+              width: 110px;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            KIDS
+          </button></a
+        >
+
+        <div id="option2">
+          <p>TRACK ORDER</p>
+          <p>CONTACT US</p>
+          <p>DOWNLOAD APP</p>
+        </div>
+      </div>
+    </div>
+    <div id="cont22">
+      <div id="cont33">
+        <div class="dropdown">
+          <h3>TOPWEAR</h3>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div>
+          <h3>BOTTOMWEAR</h3>
+        </div>
+        <div>
+          <h3>ACCESSORIES</h3>
+        </div>
+        <div>
+          <h3>HARDIK'S FAVOURITES</h3>
+        </div>
+        <div>
+          <h3>COLLECTIONS</h3>
+        </div>
+        <div>
+          <h3>SHOP BY THEMES</h3>
+        </div>
+        <div>
+          <h3>MEMBERSHIP</h3>
+        </div>
+        <div>
+          <input oninput="search()" type="text" placeholder="search" />
+        </div>
+        <div>
+          <img
+            width="50px"
+            height="50px"
+            style="margin-top: -2px; border-radius: 50%; margin-left: -25px"
+            src="https://thumbs.dreamstime.com/z/person-icon-flat-style-man-symbol-person-icon-flat-style-man-symbol-isolated-white-background-simple-people-abstract-icon-118611127.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            width="25px"
+            height="25px"
+            style="margin-top: 10px; margin-left: -30px"
+            src="https://prod-img.thesouledstore.com/public/theSoul/images/appIcons/ic_wishlist@2x.png?format=webp&w=50&dpr=1.3"
+            alt=""
+          />
+        </div>
+        <div class="cart1">
+          <a href="Cart.html"
+            ><img
+              width="25px"
+              height="25px"
+              style="margin-top: 10px; margin-left: -25px"
+              src="https://prod-img.thesouledstore.com/public/theSoul/images/appIcons/ic_newCart@2x.png?format=webp&w=100&dpr=1.3"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div id="cont44">
+      <img
+        id="image1"
+        width="100%"
+        src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/7271920221205181120.jpg?format=webp&w=1500&dpr=1.3"
+        alt="1"
+      />
+    </div>
+    <div id="cont55">
+      <div>
+        <p style="font-size: 10px; margin-left: 20%; color: rgb(90, 89, 91)">
+          <a
+            href="mensPage.html"
+            style="color: rgb(90, 89, 91); text-decoration: none"
+            >Home</a
+          >
+          / Men's Full Sleeve T-Shirt
+        </p>
+        <p style="font-size: 14px; margin-top: -1px; margin-left: 20%">
+          Men's Full Sleeve T-Shirt - 40 items
+        </p>
+      </div>
+    </div>
+    <div id="cont66">
+      <div id="cont77">
+        <select name="Gender" id="select1">
+          <option value="radio">GENDER</option>
+          <option value="">male</option>
+        </select>
+        <select name="Products" id="select1">
+          <option value="">PRODUCTS</option>
+          <option value="">Sweatshirts</option>
+        </select>
+        <select name="Themes" id="select1">
+          <option value="radio">THEMES</option>
+        </select>
+        <select name="Size" id="select1">
+          <option value="">SIZE</option>
+          <option value="">XXL</option>
+          <option value="">XL</option>
+          <option value="">L</option>
+          <option value="">M</option>
+        </select>
+        <select name="price" id="select1">
+          <option onclick="click1()" id="price1" value="radio">PRICE</option>
+          <option value="">Below - 500</option>
+          <option value="">Below - 1000</option>
+          <option value="">Below - 2000</option>
+          <option value="">Below - 3000</option>
+          <option value="">Below - 4000</option>
+        </select>
+        <select id="select1" class="sort" onchange="handleSort()">
+          <option value="sort">SORT</option>
+          <option value="htl">Price - High to Low</option>
+          <option value="lth">Price - Low to High</option>
+        </select>
+        <div id="contt88">
+          <button id="clear">CLEAR</button>
+          <button id="apply">APPLY</button>
+        </div>
+      </div>
+
+      <!-- ******************************************************************************************************* -->
+      <div id="cont88"></div>
+    </div>
+    <!-- lower page -->
+    <div id="container44">
+      <div id="container4">
+        <p
+          style="
+            color: white;
+            text-align: center;
+            margin: auto;
+            letter-spacing: 1.5px;
+            font-size: 34px;
+            font-family: sans-serif;
+          "
+        >
+          HOMEGROWN INDIAN BRAND
+        </p>
+      </div>
+      <div id="container5">
+        <p id="para">Over <b>4 Million</b> Happy Customers</p>
+      </div>
+      <div id="container6">
+        <div class="bag1">
+          <div>
+            <h3>NEED HELP</h3>
+            <h5>Contact Us</h5>
+            <h5>Track Order</h5>
+            <h5>Returns & Refunds</h5>
+            <h5>FAQs</h5>
+            <h5>My Account</h5>
+          </div>
+          <div>
+            <h3>COMPANY</h3>
+            <h5>About Us</h5>
+            <h5>Careers</h5>
+            <h5>Stores Near Me</h5>
+            <h5>From The Soul</h5>
+            <h5>Souled Army</h5>
+          </div>
+          <div>
+            <h3>MORE INFO</h3>
+            <h5>T&C</h5>
+            <h5>Privacy Policy</h5>
+            <h5>Sitemap</h5>
+          </div>
+          <div>
+            <p>COD Available</p>
+            <p>30 Days Easy Returns</p>
+          </div>
+        </div>
+        <div id="cont1">
+          <h6>EXPERIENCE THE SOULED STORE APP</h6>
+          <img
+            src="https://tss-static-images.gumlet.io/icons/play-store.png"
+            alt=""
+          />
+          <img
+            src="https://tss-static-images.gumlet.io/icons/app-store.png"
+            alt=""
+          />
+        </div>
+        <div id="cont2">
+          <div>
+            <p style="color: rgb(90, 89, 91)">Follow Us:</p>
+            <img
+              style="border-radius: 50px; height: 37px"
+              src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png"
+              alt=""
+            />
+            <img
+              style="border-radius: 50px; height: 37px"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/198px-Instagram_logo_2016.svg.png?20210403190622"
+              alt=""
+            />
+            <img
+              style="border-radius: 50px; height: 37px"
+              src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="cont3">
+          <div>
+            <div>
+              <h5>NAVIGATION LINKS</h5>
+            </div>
+            <div>
+              <h5>WHO WE ARE</h5>
+            </div>
+          </div>
+        </div>
+        <div id="cont4">
+          <div>
+            <p>100% Secure Payment :</p>
+            <img
+              width="75%"
+              src="https://www.thesouledstore.com/static/img/payments-icon.e77ef49.png"
+              alt=""
+            />
+          </div>
+          <div id="image4">
+            <p>|</p>
+            <p>Shipping Partners :</p>
+            <img
+              src="https://tss-static-images.gumlet.io/icons/fedex.png"
+              alt=""
+            />
+            <img
+              src="https://tss-static-images.gumlet.io/icons/dtdc.png"
+              alt=""
+            />
+            <img
+              src="https://tss-static-images.gumlet.io/icons/delivery.png"
+              alt=""
+            />
+            <img
+              src="https://prod-img.thesouledstore.com/public/theSoul/images/icons/ECOM-Express.png?format=webp&w=128&dpr=1.3"
+              alt=""
+            />
+            <img
+              src="https://prod-img.thesouledstore.com/public/theSoul/images/icons/XPRESSBEES.png?format=webp&w=100&dpr=1.3"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="last">
+          <p style="color: rgb(123, 121, 121)">
+            The Souled Store <b style="color: rgb(90, 89, 91)">2022-23</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let bag = [];
+  let cartItems = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  let url = "https://63a6ec4659fd83b1bb3a9e98.mockapi.io/souled-store";
+  fetch(url)
+    .then((res) => res.json())
+    .then((prod) => {
+      bag = prod[5].FullSleeve;
+      let data = prod[5].FullSleeve;
+      displayCard(data);
+    });
+
+  function handleSort() {
+    let selected = document.querySelector(".sort").value;
+    if (selected == "lth") {
+      bag.sort((a, b) => {
+        let x = a.offer.split(" ");
+        let y = b.offer.split(" ");
+        return x[1] - y[1];
+      });
+      displayCard(bag);
+    }
+    if (selected === "htl") {
+      bag.sort((a, b) => {
+        let x = a.offer.split(" ");
+        let y = b.offer.split(" ");
+        return y[1] - x[1];
+      });
+      displayCard(bag);
+    }
+  }
+
+  function search() {
+    let x = document.querySelector("input").value;
+
+    let newData = bag.filter(function (elem) {
+      return elem.productName.toLowerCase().includes(x.toLowerCase());
+    });
+    displayCard(newData);
+  }
+
+  function displayCard(data) {
+    document.querySelector("#cont88").innerHTML = "";
+
+    data.forEach(function (elem) {
+      let div = document.createElement("div");
+
+      let img = document.createElement("img");
+      img.setAttribute("src", elem.img);
+
+      let line = document.createElement("hr");
+
+      let productName = document.createElement("h5");
+      productName.innerText = elem.productName.substr(0, 30);
+
+      let disc = document.createElement("p");
+      disc.innerText = elem.description;
+
+      let off = document.createElement("p");
+      off.innerText = elem.offer;
+
+      let Discount = document.createElement("p");
+      Discount.innerText = elem.discount;
+      if (elem.discount == undefined) {
+        Discount.innerText = "10%";
+      }
+      let btn = document.createElement("button");
+      btn.innerHTML = "Add to cart";
+      btn.addEventListener("click", function () {
+        cartItems.push(elem);
+        localStorage.setItem("cartProducts", JSON.stringify(cartItems));
+      });
+
+      div.append(img, line, productName, disc, off, Discount, btn);
+      document.querySelector("#cont88").append(div);
+    });
+  }
+</script>
